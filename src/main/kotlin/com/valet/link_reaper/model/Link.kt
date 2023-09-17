@@ -6,7 +6,7 @@ import java.util.UUID
 @Entity
 data class Link(
     @Id @Column(columnDefinition = "uuid DEFAULT gen_random_uuid()")
-    var id: UUID,
+    var id: UUID?,
     var url: String,
     @JoinColumn(table = "user", referencedColumnName = "id")
     var userId: UUID,

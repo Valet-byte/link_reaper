@@ -5,6 +5,6 @@ import org.springframework.http.ResponseEntity
 import java.util.UUID
 
 interface LinkService {
-    fun addLink(link: Link): String
+    fun addLink(link: Link): UUID
     fun redirect(id: UUID): ResponseEntity<Any>
 }
